@@ -19,87 +19,91 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/styles.css?v=4d0cce31">
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css?v=k3">
+<meta name="theme-color" content="#EDE9E2">
 </head>
 <body>
 
 <header class="nav">
-  <div class="wrap nav-inner">
-    <a class="brand" href="index.html"><span class="name">Dawid Radzimski</span><span class="sub">Schody drewniane</span></a>
-    <nav class="nav-links">
-      <a href="index.html">Strona główna</a>
-      <a href="realizacje.html" class="active" aria-current="page">Realizacje</a>
-      <a href="oferta.html">Oferta</a>
-      <a href="o-nas.html">O nas</a>
-      <a href="kontakt.html">Kontakt</a>
-      <a href="kontakt.html" class="btn btn-accent">Zapytaj o wycenę</a>
-    </nav>
-    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  <div class="nav-inner">
+    <a class="brand" href="index.html"><span class="name">Radzimski</span><span class="sub">Schody drewniane</span></a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    <a class="nav-phone" href="tel:+48664877400" aria-label="Zadzwoń +48 664 877 400"><span class="num">+48 664 877 400</span> <span class="arr">→</span><svg class="ico" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.58 3.6a1 1 0 0 1-.25 1l-2.23 2.2Z" fill="currentColor"/></svg></a>
   </div>
 </header>
+<nav class="nav-links" id="menu" aria-label="Menu główne">
+    <a href="index.html">Strona główna</a>
+    <a href="realizacje.html" aria-current="page">Realizacje</a>
+    <a href="oferta.html">Oferta</a>
+    <a href="o-nas.html">O nas</a>
+    <a href="kontakt.html">Kontakt</a>
+    <div class="menu-foot"><a href="tel:+48664877400">+48 664 877 400</a><br><a href="mailto:radzimskischody@gmail.com">radzimskischody@gmail.com</a><br>Nowe Tłoki 10a, 64-200 Wolsztyn</div>
+</nav>
 
 <main>
-<section class="pagehead">
-  <img src="img/g1.jpg" alt="Schody drewniane. Dawid Radzimski - Nasze prace" width="1924" height="1414" decoding="async">
+<section class="hero sub">
+  <div class="hero-art"><img src="img/g1.jpg" fetchpriority="high" alt="Białe schody z ciemnymi stopniami" width="1924" height="1414"><svg class="stripes" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><polygon points="28,0 37,0 100,72 100,83"/><polygon points="85,0 94,0 33,100 24,100"/><polygon points="100,50 100,56 73,100 67,100"/></svg></div>
   <div class="wrap">
-    <span class="eyebrow">Realizacje</span>
-    <h1>Nasze prace</h1>
-    <p>Nasze schody z wizytówki Google, a obok przykłady rozwiązań, o które pytają klienci.</p>
-  </div>
-</section>
-<section>
-  <div class="wrap">
-    <div class="gallery">
-      <div class="tile t-two3 reveal"><img src="img/g2.jpg" alt="Schody drewniane. Dawid Radzimski" loading="lazy" width="1976" height="1460" decoding="async"></div>
-      <div class="tile t-third reveal"><img src="img/g3.jpg" alt="Schody drewniane. Dawid Radzimski" loading="lazy" width="1600" height="1068" decoding="async"></div>
-      <div class="tile t-third reveal"><img src="img/g4.jpg" alt="Schody drewniane. Dawid Radzimski" loading="lazy" width="1534" height="990" decoding="async"></div>
-      <div class="tile t-third reveal"><img src="img/g5.jpg" alt="Schody drewniane. Dawid Radzimski" loading="lazy" width="1600" height="1066" decoding="async"></div>
-      <div class="tile t-third reveal"><img src="img/g6.jpg" alt="Schody drewniane. Dawid Radzimski" loading="lazy" width="1600" height="1068" decoding="async"></div>
-      <div class="tile t-third reveal"><img src="img/about.jpg" alt="Schody drewniane. Dawid Radzimski" loading="lazy" width="2048" height="1500" decoding="async"></div>
+    <div class="hero-copy">
+      <span class="eyebrow">Realizacje</span>
+      <h1>Nasze<br>prace</h1>
+      <p class="lead">Nasze schody z wizytówki Google, a obok przykłady rozwiązań, o które pytają klienci.</p>
+      <div class="hero-actions"><a href="kontakt.html" class="btn">Zapytaj o wycenę</a></div>
     </div>
   </div>
 </section>
-<section class="cta">
-  <div class="wrap">
-    <div class="reveal">
-      <span class="eyebrow">Współpraca</span>
-      <h2>Spodobały Ci się nasze prace?</h2>
-      <p>Opowiedz, co trzeba zrobić - przygotujemy wycenę.</p>
-    </div>
-    <div class="cta-actions reveal">
-      <a href="kontakt.html" class="btn btn-light">Zapytaj o wycenę <span class="arr">→</span></a>
-      <a href="tel:+48664877400" class="btn btn-ghost btn-ghost-cta">+48 664 877 400</a>
-    </div>
+<section class="dark" style="padding:clamp(70px,9vw,120px) 0">
+  <h2 class="giant long reveal">Galeria</h2>
+  <p class="giant-sub reveal">Schody z naszych realizacji i rozwiązania, o które pytają klienci.</p>
+  <div class="masonry">
+    <figure class="reveal"><img src="img/hero.jpg" alt="Dębowe schody ażurowe przy oknie" loading="lazy" width="1940" height="1390" decoding="async"></figure>
+    <figure class="reveal"><img src="img/g5.jpg" alt="Drewniane schody z poręczą" loading="lazy" width="1600" height="1066" decoding="async"></figure>
+    <figure class="reveal"><img src="img/g2.jpg" alt="Schody z balustradą ze szkła" loading="lazy" width="1976" height="1460" decoding="async"></figure>
+    <figure class="reveal"><img src="img/g6.jpg" alt="Ciemne stopnie z metalową balustradą" loading="lazy" width="1600" height="1068" decoding="async"></figure>
+    <figure class="reveal"><img src="img/g3.jpg" alt="Schody z podświetleniem stopni" loading="lazy" width="1600" height="1068" decoding="async"></figure>
+    <figure class="reveal"><img src="img/g4.jpg" alt="Schody wspornikowe przy szkle" loading="lazy" width="1534" height="990" decoding="async"></figure>
+    <figure class="reveal"><img src="img/about.jpg" alt="Schody zabiegowe z białą balustradą" loading="lazy" width="2048" height="1500" decoding="async"></figure>
+  </div>
+</section>
+<section class="cta dark pad">
+  <div class="wrap reveal">
+    <span class="eyebrow">Spodobały Ci się nasze prace?</span>
+    <a class="bigphone" href="tel:+48664877400">664 877 400</a>
+    <p class="note">Opowiedz, co trzeba zrobić, a przygotujemy wycenę.</p>
+    <a class="btn on-dark" href="tel:+48664877400">Zadzwoń <span class="arr">→</span></a>
+    <a class="btn on-dark" href="kontakt.html" style="margin-left:8px">Napisz do nas</a>
   </div>
 </section>
 </main>
 
 <footer>
   <div class="wrap">
-    <div class="foot-grid">
-      <div class="foot-brand">
-        <div class="name">Schody drewniane. Dawid Radzimski</div>
-        <p>Schody, po których chodzi się codziennie, robimy pod wymiar konkretnego domu. Pracujemy spod Wolsztyna.</p>
-      </div>
+    <div class="foot-top">
       <div class="foot-col">
-        <h4>Nawigacja</h4>
-        <a href="index.html">Strona główna</a>
-        <a href="realizacje.html">Realizacje</a>
-        <a href="oferta.html">Oferta</a>
-        <a href="o-nas.html">O nas</a>
-        <a href="kontakt.html">Kontakt</a>
-      </div>
-      <div class="foot-col">
-        <h4>Kontakt</h4>
         <a href="tel:+48664877400">+48 664 877 400</a>
         <a href="mailto:radzimskischody@gmail.com">radzimskischody@gmail.com</a>
         <p>Nowe Tłoki 10a, 64-200 Wolsztyn</p>
-        <a href="https://www.google.com/maps?cid=7790141071055994152" target="_blank" rel="noopener">Jak dojechać →</a>
-      <div class="foot-soc">
-        <a class="soc" href="https://www.google.com/maps?cid=7790141071055994152" target="_blank" rel="noopener" aria-label="Google - Schody drewniane. Dawid Radzimski"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z" fill="currentColor"/></svg></a>
+        <a href="https://www.google.com/maps?cid=7790141071055994152" target="_blank" rel="noopener">Jak dojechać <span class="arr">→</span></a>
       </div>
+      <div class="foot-col">
+        <a href="index.html">Strona główna</a>
+        <a href="realizacje.html">Realizacje</a>
+        <a href="oferta.html">Oferta</a>
+        <a href="o-nas.html">O nas</a>
+        <a href="kontakt.html">Kontakt</a>
       </div>
+      <div class="foot-col">
+        <a href="https://www.google.com/maps?cid=7790141071055994152" target="_blank" rel="noopener">Google <span class="arr">→</span></a>
+        <p class="s">5,0 w opiniach klientów</p>
+        <p style="margin-top:14px"><a class="soc" href="https://www.google.com/maps?cid=7790141071055994152" target="_blank" rel="noopener" aria-label="Google - Schody drewniane. Dawid Radzimski"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z" fill="currentColor"/></svg></a></p>
+      </div>
+    </div>
+    <div class="foot-mid">
+      <a class="brand" href="index.html"><span class="name">Radzimski</span><span class="sub">Schody drewniane</span></a>
+      <a class="btn" href="kontakt.html">Zapytaj o wycenę <span class="arr">→</span></a>
     </div>
     <div class="foot-bot">
       <span>© 2026 Schody drewniane. Dawid Radzimski</span>
@@ -107,9 +111,9 @@
     </div>
   </div>
 </footer>
-<div class="sticky-reserve"><a class="sr-book" href="kontakt.html">Zapytaj o wycenę</a><a class="sr-call" href="tel:+48664877400" aria-label="Zadzwoń"><svg class="ico-tel" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.58 3.6a1 1 0 0 1-.25 1l-2.23 2.2Z" fill="currentColor"/></svg></a></div>
+<div class="sticky-reserve"><a class="sr-book" href="kontakt.html">Zapytaj o wycenę</a><a class="sr-call" href="tel:+48664877400" aria-label="Zadzwoń"><svg class="ico-tel" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.58 3.6a1 1 0 0 1-.25 1l-2.23 2.2Z" fill="currentColor"/></svg></a></div>
 <div class="demo-wazne" data-do="2026-11-10" data-cykl="3" hidden><svg class="dw-ico" width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="8.6" stroke="currentColor" stroke-width="1.8"/><path d="M12 7.2V12l3.3 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span class="dw-txt"></span></div>
 
-<script src="assets/main.js"></script>
+<script src="assets/main.js?v=k3"></script>
 </body>
 </html>
